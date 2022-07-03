@@ -10,3 +10,5 @@ FetchContent_Declare(
   GIT_TAG        v1.44.1
 )
 FetchContent_MakeAvailable(libuv)
+
+target_link_libraries(snake uv_a)
