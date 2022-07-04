@@ -144,6 +144,7 @@ int apparition_pomme(Serpent_t * Serpent, Pomme_t * Pomme) {
     Pomme->x = rand_num(1, 19);
     Pomme->y = rand_num(1, 19);
     Serpent->longueur += 1;
+    world[Pomme->x][Pomme->y] = 'o'
 
 }
 
@@ -194,8 +195,7 @@ int ajouter_serpent(Serpent_t * Serpent, const int * rang, const char * entree_u
 
                 }
 
-        world[Serpent->ancien_x][Serpent->ancien_y] = 'o';   
-                
+        world[Serpent->ancien_x][Serpent->ancien_y] = 'o';  
 
         }
 }
